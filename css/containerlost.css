@@ -1,0 +1,10 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.containerlost {
+  width: 100%;
+  height: 250px;
+  overflow: hidden;
+  position: relative;
+}

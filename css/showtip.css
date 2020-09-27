@@ -1,0 +1,31 @@
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  /* 定位 */
+  position: absolute;
+  z-index: 1;
+}
+.tooltip:hover:before {
+  content: attr(data-showtip);
+  background-color: #E1E1EA;
+  color: #444;
+  padding: 0.8em 1em;
+  position: absolute;
+  left: 100%;
+  top: -70%;
+  margin-left: 8px;
+  white-space: pre;
+}
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
